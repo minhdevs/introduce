@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML5/CSS3</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main-container">
+      <img src="./avatar_me.png" alt="NGUYỄN NGỌC MINH" id="avatar" />
+      <h2 id="username">Nguyễn Ngọc Minh</h2>
+      <p id="descriptions">Web Developer</p>
+      <nav id="contacts">
+        <ul>
+          <li>
+            <a
+              target="_blank"
+              title="facebook"
+              href="https://www.facebook.com/depressed.catz"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              title="instagram"
+              href="https://www.instagram.com/depressed.saz/"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a target="_blank" title="telegram" href="https://t.me/nm_2808"
+              ><i class="fa-brands fa-telegram"></i
+            ></a>
+          </li>
+          <li>
+            <a target="_blank" title="github" href="https://github.com/minhdevs"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <button id="follow">Follow Me</button>
+    </div>
+    <div id="spiner"></div>
+    <script>
+      var container = document.querySelector("#main-container");
+      var spiner = document.querySelector("#spiner");
+
+      setTimeout(function () {
+        spiner.remove();
+        container.style.display = "block";
+      }, 3000);
+    </script>
+    <script
+      src="https://kit.fontawesome.com/c33a9b0eed.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
