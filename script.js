@@ -5,10 +5,10 @@ var username = document.querySelector("#username");
 var link = document.querySelectorAll("#contacts a");
 var follow = document.getElementById("follow");
 
-// setTimeout(function () {
-//   spiner.remove();
-//   container.style.display = "block";
-// }, 3000);
+setTimeout(function () {
+  spiner.remove();
+  container.style.display = "block";
+}, 3000);
 
 var isDark = false;
 
