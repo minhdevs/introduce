@@ -1,14 +1,15 @@
 var container = document.querySelector("#main-container");
-var spiner = document.querySelector("#spiner");
 var avatar = document.querySelector("#avatar");
 var username = document.querySelector("#username");
 var link = document.querySelectorAll("#contacts a");
 var follow = document.getElementById("follow");
 
-setTimeout(function () {
-  spiner.remove();
+const load = document.querySelector(".banner");
+
+setTimeout(() => {
+  load.style.display = "none";
   container.style.display = "block";
-}, 3000);
+}, 5000);
 
 var isDark = false;
 
