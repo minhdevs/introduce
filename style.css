@@ -170,9 +170,9 @@ body {
 
 /* BANNER STYLE */
 img {
-  width: 30vw;
   display: block;
   position: absolute;
+  width: 100%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -185,8 +185,8 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(0deg);
-  width: 30vw;
-  height: 30vw;
+  width: 234.5px;
+  height: 234.5px;
   user-select: none;
   cursor: pointer;
 }
@@ -231,8 +231,8 @@ img {
 @keyframes load {
   0% {
     border-radius: 572px 670px 926px 752px / 870px 710px 593px 600px;
-    width: 30vw;
-    height: 30vw;
+    width: 234.5px;
+    height: 234.5px;
   }
 
   20% {
@@ -240,13 +240,13 @@ img {
   }
 
   50% {
-    width: 40vw;
-    height: 40vw;
+    width: 300px;
+    height: 300px;
   }
 
   100% {
-    width: 30vw;
-    height: 30vw;
+    width: 234.5px;
+    height: 234.5px;
     border-radius: 572px 670px 926px 752px / 870px 710px 593px 600px;
   }
 }
@@ -257,33 +257,120 @@ img {
   }
 
   20% {
-    width: 30vw;
-    height: 30vw;
+    width: 234.5px;
+    height: 234.5px;
   }
 
   50% {
-    width: 35vw;
-    height: 35vw;
+    width: 260px;
+    height: 260px;
     border-radius: 200px 500px 500px 400px / 600px 500px;
   }
 
   100% {
-    width: 30vw;
-    height: 30vw;
+    width: 234.5px;
+    height: 234.5px;
     border-radius: 483px 200px 400px 500px / 361px 678px 256px 600px;
   }
 }
 
 @keyframes load-img {
   0% {
-    width: 30vw;
+    width: 234.5px;
   }
 
   50% {
-    width: 33vw;
+    width: 250px;
   }
 
   100% {
+    width: 234.5px;
+  }
+}
+
+@media (max-width: 768px) {
+  img {
     width: 30vw;
   }
+
+  .banner,
+  .mini-banner {
+    width: 30vw;
+    height: 30vw;
+  }
+  /* KEY FRAMES */
+  @keyframes zoom {
+    0% {
+      width: 0px;
+      height: 0px;
+    }
+
+    100% {
+      width: 280px;
+      height: 280px;
+      background: transparent;
+    }
+  }
+
+  @keyframes load {
+    0% {
+      border-radius: 572px 670px 926px 752px / 870px 710px 593px 600px;
+      width: 30vw;
+      height: 30vw;
+    }
+
+    20% {
+      border-radius: 500px 400px 400px 500px / 400px 600px 600px 300px;
+    }
+
+    50% {
+      width: 40vw;
+      height: 40vw;
+    }
+
+    100% {
+      width: 30vw;
+      height: 30vw;
+      border-radius: 572px 670px 926px 752px / 870px 710px 593px 600px;
+    }
+  }
+
+  @keyframes mini-load {
+    0% {
+      border-radius: 483px 200px 400px 500px / 361px 678px 256px 600px;
+    }
+
+    20% {
+      width: 30vw;
+      height: 30vw;
+    }
+
+    50% {
+      width: 35vw;
+      height: 35vw;
+      border-radius: 200px 500px 500px 400px / 600px 500px;
+    }
+
+    100% {
+      width: 30vw;
+      height: 30vw;
+      border-radius: 483px 200px 400px 500px / 361px 678px 256px 600px;
+    }
+  }
+
+  @keyframes load-img {
+    0% {
+      width: 30vw;
+    }
+
+    50% {
+      width: 33vw;
+    }
+
+    100% {
+      width: 30vw;
+    }
+  }
+
+  /* KEY FRAMES */
 }
